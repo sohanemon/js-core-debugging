@@ -1,26 +1,12 @@
-// const myInches = 12;
-// const myFeet = myInches /12;
-// console.log(myFeet);
+/* -------------------------------------------------------------------------- */
+/*                   done: conversion between inch and feet                   */
+/* -------------------------------------------------------------------------- */
+/** We know that
+ * 12 inch = 1 feet
+ */
+const inchToFeet = (num) => (num / 12).toFixed(2);
+const feetToInch = (num) => num * 12;
 
-// const dataInches = 144;
-// const dadaFeet = dataInches / 12;
-// console.log('data feet', dadaFeet);
-
-// const dadiInches = 60;
-// const dadiFeet = dadiInches / 12;
-// console.log('dadiFeet', dadiFeet);
-
-
-function inchToFeet(inches){
-    const feet = inches / 12;
-    return feet;
-}
-
-const dadaInches = 144;
-const dadaFeet = inchToFeet(dadaInches);
-console.log(dadaFeet);
-
-const nanaInches = 168;
-const nanaFeet = inchToFeet(nanaInches);
-console.log('nana feet', nanaFeet);
-
+let num = 12;
+console.log(num, "inches =", inchToFeet(num), "feet");
+console.log(num, "feet =", feetToInch(num), "inches");
