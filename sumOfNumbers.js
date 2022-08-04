@@ -1,9 +1,12 @@
-// 1 + 2 + 3 + 4 + 5 + 6 + 7
-function sumOfNumbers(number) {
-    let sum = 0;
-    for (let i = 1; i <= number; i++) {
-        sum = sum + i;
-        console.log(i, sum);
-    }
-    return sum;
-}
+/* -------------------------------------------------------------------------- */
+/*                    todo: summation of a series of number                   */
+/* -------------------------------------------------------------------------- */
+
+/* we are about to use forEach to make this sum work */
+const summation = (num) => {
+  let sum = 0;
+  [...Array(num)].forEach((e, i) => (sum += i));
+  return sum;
+};
+const num = 100; /* change the values here */
+console.log("summation of all numbers from 1 to", num, "is", summation(num));
