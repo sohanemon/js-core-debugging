@@ -1,15 +1,13 @@
-// 1 * 2 * 3 *4 *5 *6 * 7
+/* -------------------------------------------------------------------------- */
+/*                     todo: finding factorial of a number                    */
+/* -------------------------------------------------------------------------- */
 
-// 3! = 3*2*1
-// 4! = 4*3*2*1
-
-function factorial(number){
-    let result = 1;
-    for(let i = 1; i <= number; i++){
-        result = result * i;
-    }
-    return result;
-}
-
-const result = factorial(9);
-console.log(result);
+const factorial = (number) => {
+  let fact = 1;
+  while (number > 0) {
+    fact *= number--; /* note: first complete the total operation, reduce -- */
+  }
+  return fact;
+};
+console.log("Factorial", factorial(5));
+console.log("Factorial" + factorial(5)); //note: it actually concat
