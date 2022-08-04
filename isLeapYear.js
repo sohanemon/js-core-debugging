@@ -1,5 +1,5 @@
 /* -------------------------------------------------------------------------- */
-/*                  todo: finding a year is leap year or not                  */
+/*                  DONE: finding a year is leap year or not                  */
 /* -------------------------------------------------------------------------- */
 
 const IsLeapYear = (year) => {
