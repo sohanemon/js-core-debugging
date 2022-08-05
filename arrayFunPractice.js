@@ -47,3 +47,31 @@ const summation = (numbers) => {
 };
 
 console.log(summation(getOddsByFilter(numbers)));
+
+/* ---------------------- creating array with iteration --------------------- */
+
+const array1 = [...Array(10).keys()];
+const array2 = Array.from(Array(10).keys());
+console.log(array1);
+console.log(array2);
+
+/* -------------------------------------------------------------------------- */
+
+/* ----------------------- Object to array conversion ----------------------- */
+const me = {
+  name: "emon",
+  roll: 2521,
+  class: "bsc",
+  year: "final",
+};
+console.log(me);
+console.log(Object.keys(me)); //[ 'name', 'roll', 'class', 'year' ]
+console.log(Object.values(me)); //[ 'emon', 2521, 'bsc', 'final' ]
+console.log(Object.entries(me)); /* [
+  [ 'name', 'emon' ],
+  [ 'roll', 2521 ],
+  [ 'class', 'bsc' ],
+  [ 'year', 'final' ]
+] */
+
+/* -------------------------------------------------------------------------- */
